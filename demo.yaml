@@ -1,0 +1,13 @@
+module: demo
+runtime: python27
+api_version: 1
+threadsafe: true
+vm: true
+
+manual_scaling:
+  instances: 1
+
+handlers:
+- url: .*
+  script: demo.app
+
